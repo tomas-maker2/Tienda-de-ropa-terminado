@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- FONT AWESOME -->
+     <script src="https://kit.fontawesome.com/820d828ec1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./CSS/tienda.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header-mobile">
+            <a href="index.html"><img src="./IMG/Foto de Tomas 1.svg"></a>
+            <button class="open-menu" id="open-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </header>
+        <aside>
+            <button class="close-menu" id="close-menu">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <header>
+                <a href="index.html"><img src="./IMG/Foto de Tomas 1.svg"></a>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li><a class="boton-volver boton-menu" href="tienda.html"><i class="fa-solid fa-arrow-rotate-left"></i>Volver </a></li>
+                    
+                    <li><a class="boton-carrito active boton-menu href="#"><i class="fa-solid fa-cart-arrow-down"></i>Carrito</a></li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">
+                    <i class="fa-regular fa-copyright"></i>2023 Polis
+                </p>
+            </footer>
+        </aside>
+
+        <main>
+            <h2 class="titulo-principal">Carrito</h2>
+            <div class="contenedor-carrito">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta Vacio <i class="fa-regular fa-face-sad-tear"></i></p>
+
+                <div id="carrito-productos" class="carrito-productos disabled">
+                    <!-- con Javascript -->
+                </div>
+
+                <div id="carrito-acciones" class="carrito-acciones disabled">
+                    <div class="carrito-acciones-izq">
+                        <div class="carrito-acciones-vaciar">Vaciar carrito</div>
+                    </div>
+                    <div class="carrito-acciones-der">
+                        <div class="carrito-acciones-total">
+                            <p>Total</p>
+                            <p id="total">$4000</p>
+                            <button class="carrito-acciones-comprar">Comprar ahora</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu Comprado <i class="fa-regular fa-face-sad-tear"></i></p>
+            </div>
+        </main>
+    </div>
+
+    <script src="./JS/barra.js"></script>
+    <script src="./JS/carrito.js"></script>
+
+</body>
+</html>

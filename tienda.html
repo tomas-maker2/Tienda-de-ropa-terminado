@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/820d828ec1.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/tienda.css">
+
+</head>
+<body>
+    
+    <div class="wrapper">
+        <header class="header-mobile">
+            <a href="index.html"><img src="./IMG/Foto de Tomas 1.svg"></a>
+            <button class="open-menu" id="open-menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </header>
+        <aside >
+            <button class="close-menu" id="close-menu">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <header>
+                <a href="index.html"><img src="./IMG/Foto de Tomas 1.svg"></a>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li><button class="boton-categoria boton-menu active" id="todos"><i class="fa-solid fa-bookmark"></i> Todos los Porudctos</button></li>
+                    <li><button class="boton-categoria boton-menu" id="pantalones"><i class="fa-solid fa-plate-wheat"></i>Alfombras</button></li>
+                    <li><button class="boton-categoria boton-menu" id="remeras"><i class="fa-solid fa-plate-wheat"></i>Platos</button></li>
+                    <li><button class="boton-categoria boton-menu" id="zapatillas"><i class="fa-solid fa-plate-wheat"></i>Platos 2</button></li>
+                    <li><button class="boton-categoria boton-menu" id="abrigos"><i class="fa-solid fa-plate-wheat"></i>Platos 2</button></li>
+                    <li><a class="boton-carrito boton-menu" href="carrito.html"><i class="fa-solid fa-cart-arrow-down"></i>Carrito <span class="numerito" id="numerito">0</span></a></li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">
+                    <i class="fa-regular fa-copyright"></i>2023 Polis
+                </p>
+            </footer>
+        </aside>
+
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los Productos</h2>
+            <div class="contenedor-productos" id="contenedor-productos">
+                <!-- cargar con javascript -->
+            </div>
+        </main>
+
+    </div>
+
+    <script src="./JS/barra.js"></script>
+    <script src="./JS/productos.js"></script>
+
+
+</body>
+</html>
